@@ -1,12 +1,12 @@
-public class Users {
+public class User {
     private String userFirstName;
     private String userLastName;
     private int userAge;
     private String userNIF;
     private boolean activeAccount = false;
 
-    // Constructor for the users
-    public Users(String inputFirstName,
+    // Constructor for the user
+    public User(String inputFirstName,
                  String inputLastName,
                  int inputUserAge,
                  String inputUserNIF) {

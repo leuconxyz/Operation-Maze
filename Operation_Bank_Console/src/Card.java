@@ -1,20 +1,24 @@
-public class Cards {
+/*
+To be added later when or if I make this more in depth...
+This is just the base of what it can have, haven't looked at it much.
+ */
+
+public class Card {
     private final String cardNumber;
-    private final String cardUser;
-    // Card Holder is the name of the person
-    private String cardHolder;
+    private final String cardUserId;
+    private String cardHolder; // Cardholder is the name of the person
     private final String cardCVV;
     private String cardPin;
     private double cardBalance = 0;
 
      // Card Constructor
-    public Cards(String inputCardNumber,
+    public Card(String inputCardNumber,
                 String inputCardUser,
                 String inputCardHolder,
                 String inputCardCVV,
                 String inputCardPin) {
         this.cardNumber = inputCardNumber;
-        this.cardUser = inputCardUser;
+        this.cardUserId = inputCardUser;
         this.cardHolder = inputCardHolder;
         this.cardCVV = inputCardCVV;
         this.cardPin = inputCardPin;
@@ -25,7 +29,7 @@ public class Cards {
     }
 
     public String getCardUser() {
-        return cardUser;
+        return cardUserId;
     }
 
     public String getCardHolder() {
